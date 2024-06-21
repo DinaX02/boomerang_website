@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomepageGeral from "./pages/HomePageWeb/HomePageWeb";
+import AboutUs from "./pages/AboutUs";
+import PrivacyPolicy from "./pages/PoliticadePrivacidade";
+import PoliticadeCookies from "./pages/PoliticadeCookies";
+import TermoseCondicoes from "./pages/TermoseCondicoes";
+
+import './index.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return (  
+    <div>
+<BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomepageGeral/>}></Route>
+        <Route path="/sobre-nos" element={<AboutUs/>}></Route>
+        <Route path="/politica-de-privacidade" element={<PrivacyPolicy/>}></Route>
+        <Route path="/politica-cookies" element={<PoliticadeCookies/>}></Route>
+        <Route path="/termos-e-condicoes" element={<TermoseCondicoes/>}></Route>
+      </Routes>
+</BrowserRouter>
     </div>
   );
 }
