@@ -10,8 +10,6 @@ const FooterStyle = styled.footer`
     padding: 50px 100px;
     font-size: 16px;
     font-weight: 500;
-    border-top: 1px solid #e0e0e0; 
-    
     .logoFooter {
         max-width: 200px;
         @media (max-width: 880px) {
@@ -36,9 +34,9 @@ const FooterStyle = styled.footer`
             a{
                 text-decoration: none;
                 color: black;
-                 &:hover {
+             &:hover {
                     color: #00c17c;
-            }
+                }}
         }
     }
     .redes {
@@ -46,7 +44,6 @@ const FooterStyle = styled.footer`
         justify-content: center;
         gap: 20px;
         font-weight: 600;
-
         img {
             width: 30px;
         }
