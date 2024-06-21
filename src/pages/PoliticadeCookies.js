@@ -1,13 +1,16 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import Navbar from "./HomePageWeb/Navbar";
+import {useNavigate} from "react-router-dom";
+import { FaArrowUp, FaArrowLeft } from "react-icons/fa";
+import Footer from "../pages/HomePageWeb/Footer";
 
 const Container = styled.div`
   display: flex;
   justify-content: center;
   padding: 2rem;
   box-sizing: border-box;
-  margin-top: 3em;
+  margin-top: 6em;
 
   a {
     color: #00c17c;
@@ -67,13 +70,59 @@ const Paragraph = styled.p`
   }
 `;
 
+const BackButton = styled.button`
+  position: fixed;
+  top: 5rem;
+  left: 2rem;
+  background-color: #00c17c;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: #009d6b;
+  }
+`;
+
+const ScrollToTopButton = styled.button`
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #00c17c;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: #009d6b;
+  }
+`;
+
 const PoliticadeCookies = () => {
+
+  const navigate = useNavigate();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <div>
       <Navbar />
+      <BackButton onClick={() => navigate(-1)}>
+        <FaArrowLeft />
+      </BackButton>
       <Container>
         <ContentWrapper>
           <Title>Política de Cookies</Title>
@@ -288,6 +337,10 @@ const PoliticadeCookies = () => {
           </Paragraph>
         </ContentWrapper>
       </Container>
+      <ScrollToTopButton onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+        <FaArrowUp />
+      </ScrollToTopButton>
+      <Footer/>
     </div>
   );
 };

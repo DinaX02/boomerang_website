@@ -10,7 +10,8 @@ const FooterStyle = styled.footer`
     padding: 50px 100px;
     font-size: 16px;
     font-weight: 500;
-
+    border-top: 1px solid #e0e0e0; 
+    
     .logoFooter {
         max-width: 200px;
         @media (max-width: 880px) {

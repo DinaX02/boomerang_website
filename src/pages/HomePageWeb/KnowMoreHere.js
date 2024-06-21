@@ -13,10 +13,10 @@ const KnowMoreContainer = styled.div`
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    padding: 0 30px;
+    // padding: 0 30px;
   }
   @media (max-width: 768px) {
-    padding: 0 30px;
+    // padding: 0 30px;
   }
   @media (min-width: 768px) and (max-width: 1200px) {
     padding: 0 120px;
@@ -90,7 +90,7 @@ const KnowMoreHere = () => {
       </ImageWrapper>
       <TextContent>
         <p>Agora imagina ao invés de comprares uma peça de roupa nova, gastares esse dinheiro para usares, à priori, apenas num evento específico, alugares uma peça que está sem uso, poderes desta forma ir a esse evento com charme e dando uma nova vida a essa peça de roupa?! Esta opção também te encanta?</p>
-        <p><Bold>Descobre mais como o podes fazer acedendo à nossa página num formato mobile ou instalando a nossa app.</Bold></p>
+        <p><Bold>Descobre mais como o podes fazer acedendo à nossa plataforma num formato mobile ou instalando a nossa app.</Bold></p>
       </TextContent>
     </KnowMoreContainer>
   );
