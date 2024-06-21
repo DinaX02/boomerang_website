@@ -36,6 +36,8 @@ const FooterStyle = styled.footer`
             a{
                 text-decoration: none;
                 color: black;
+                 &:hover {
+                    color: #00c17c;
             }
         }
     }

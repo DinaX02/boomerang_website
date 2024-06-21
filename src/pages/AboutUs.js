@@ -20,69 +20,69 @@ import { FaArrowLeft } from "react-icons/fa";
 import Footer from "../pages/HomePageWeb/Footer";
 import HeroAboutUs from "./HeroAboutUs";
 
-const ContainerInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding-left: 1.4em;
-  padding-right: 1.4em;
-  margin-top: 5em;
+// const ContainerInfo = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   padding-left: 1.4em;
+//   padding-right: 1.4em;
+//   margin-top: 5em;
 
-  .titulosAboutUs {
-    margin-top: 1em;
-    font-size: xx-large;
-  }
+//   .titulosAboutUs {
+//     margin-top: 1em;
+//     font-size: xx-large;
+//   }
 
-  h5 {
-    margin-bottom: 1em;
-  }
+//   h5 {
+//     margin-bottom: 1em;
+//   }
 
-  .tags_boomerang {
-    background-color: ${colors.cinzaEscuro};
-    /* border: 2px solid #5D5D67; */
-    color: #00c17c;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-    padding-left: 0.7em;
-    padding-right: 0.7em;
-    border-radius: 25px;
-    max-width: 150px;
-    margin-right: 0.7em;
-    margin-bottom: 0.7em;
-  }
+//   .tags_boomerang {
+//     background-color: ${colors.cinzaEscuro};
+//     /* border: 2px solid #5D5D67; */
+//     color: #00c17c;
+//     padding-top: 0.3em;
+//     padding-bottom: 0.3em;
+//     padding-left: 0.7em;
+//     padding-right: 0.7em;
+//     border-radius: 25px;
+//     max-width: 150px;
+//     margin-right: 0.7em;
+//     margin-bottom: 0.7em;
+//   }
 
-  .tags_boomerang_big {
-    background-color: ${colors.cinzaEscuro};
-    /* border: 2px solid #5D5D67; */
-    color: #00c17c;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-    padding-left: 0.7em;
-    padding-right: 0.7em;
-    border-radius: 25px;
-    max-width: 180px;
-    margin-right: 0.7em;
-    margin-bottom: 0.7em;
-  }
+//   .tags_boomerang_big {
+//     background-color: ${colors.cinzaEscuro};
+//     /* border: 2px solid #5D5D67; */
+//     color: #00c17c;
+//     padding-top: 0.3em;
+//     padding-bottom: 0.3em;
+//     padding-left: 0.7em;
+//     padding-right: 0.7em;
+//     border-radius: 25px;
+//     max-width: 180px;
+//     margin-right: 0.7em;
+//     margin-bottom: 0.7em;
+//   }
 
-  .tags_boomerang_extra {
-    background-color: ${colors.cinzaEscuro};
-    /* border: 2px solid #5D5D67; */
-    color: #00c17c;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-    padding-left: 0.7em;
-    padding-right: 0.7em;
-    border-radius: 25px;
-    max-width: 220px;
-    margin-right: 0.7em;
-    margin-bottom: 0.7em;
-  }
+//   .tags_boomerang_extra {
+//     background-color: ${colors.cinzaEscuro};
+//     /* border: 2px solid #5D5D67; */
+//     color: #00c17c;
+//     padding-top: 0.3em;
+//     padding-bottom: 0.3em;
+//     padding-left: 0.7em;
+//     padding-right: 0.7em;
+//     border-radius: 25px;
+//     max-width: 220px;
+//     margin-right: 0.7em;
+//     margin-bottom: 0.7em;
+//   }
 
-  img {
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-`;
+//   img {
+//     margin-top: 1em;
+//     margin-bottom: 1em;
+//   }
+// `;
 
 const ContainerTeam = styled.div`
   margin-top: 2em;
