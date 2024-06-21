@@ -94,7 +94,7 @@ const HeroAboutUs = () => {
   return (
     <HeroWrapper>
       <HeroOverlay />
-      <HeroTitle>Sobre Nós</HeroTitle>
+      <HeroTitle>Sobre Nós </HeroTitle>
       <HeroText>Conhece mais sobre a equipa por detrás da Boomerang e o que nos motiva!</HeroText>
     </HeroWrapper>
   );
